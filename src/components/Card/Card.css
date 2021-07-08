@@ -1,0 +1,58 @@
+.card {
+  margin: 20px;
+  width: 18rem;
+  height: 15.5rem;
+  box-shadow: 0px 15px 45px 0px #1d1d1d65;
+  border-radius: 20px;
+  background: #f2f2f2ec;
+}
+.card:hover{
+  transform: scale(1.03);
+  transition-duration: 0.05s;
+}
+
+.card-title {
+  font-family: 'inpact';
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #465bd3;
+}
+.card-title:hover {
+  text-decoration: underline;
+  color: #465bd3;
+}
+
+
+#closeIcon {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+  
+}
+
+.card-body {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
+.row{
+  margin-top: 2rem;
+}
+
+.minmax {
+  font-size: 19px;
+  font-family: Rubik;
+  font-weight: 300;
+  padding: 1vw;
+}
+.btnClose{
+border-radius: 3px; 
+background-color: #e74242;
+color: white; 
+border: none;
+
+}
+.btnClose:hover{
+  background-color: #da3e3e;
+}

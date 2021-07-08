@@ -1,0 +1,16 @@
+.iconosRedes {
+  width: 10rem;
+  padding: 7rem;
+  width: 3rem;
+}
+
+.iconImg {
+  width: 110px;
+  height: 110px;
+}
+.spanLinks {
+  display: flex;
+  flex-direction: row;
+  margin-left: 22rem;
+  margin-top: 4rem;
+}

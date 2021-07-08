@@ -1,0 +1,46 @@
+#WeatherLogo {
+  margin-right: 0.6vw;
+}
+
+.navbar{
+  background: #bdc3c7;  
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
+
+}
+.containerContact{
+  margin-left: 40%;
+}
+.contact{
+  font-family: Merriweather;
+  font-size: 18px;
+  padding: 11%;
+  color: white;
+  border-radius: 0.5vw;
+}
+.contact:hover{
+  background-color: rgb(161, 224, 228);
+  text-decoration: underline;
+ 
+}
+
+.about{
+  font-family: Merriweather;
+  font-size: 18px;
+  padding: 11%;
+  color: white;
+  border-radius: 0.5vw ;
+  outline: none;
+}
+.about:hover{
+  background-color: rgb(161, 224, 228);
+  transition-duration: 0.4s;
+  text-decoration: underline;
+}
+.title{
+  font-family: Merriweather;
+  font-size: 22px;
+}
+.Container
+{
+  align-items: center;
+}
