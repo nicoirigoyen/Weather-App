@@ -1,3 +1,5 @@
+@media screen and (min-width: 1024px) and (max-width: 1980px){
+   
 .ciudad{margin-left: 30rem;
     margin-top: 5rem;
     width: 35rem;
@@ -39,3 +41,94 @@
   margin-top: 8px;
 }
 
+    }
+    @media screen and (min-width: 720px) and (max-width: 1224px){
+  
+ 
+        .ciudad{margin-left: 18rem;
+            margin-top: 5rem;
+            width: 35rem;
+            height: 25rem;
+            box-shadow: 0px 15px 45px 0px #1d1d1d65;
+            border-radius: 20px;
+            background: #f2f2f26c;
+        }
+        
+        .titleCardDetail{
+         
+            padding: 2vw;
+            font-family:Concert One;
+            font-size: 44px;
+            color: rgb(42, 54, 165);
+        }
+        .info{
+            
+            display: flex;
+            flex-direction: column;
+            font-family:Concert One;
+            font-size: 23px;
+            
+        }
+        .conteinerTitulo{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10vw;
+        }
+        .itemsInfo{
+            padding: 3px;
+            
+        }
+        .iconImg{
+            display: flex;
+          justify-content: flex-end;
+          margin-right: 8px;
+          margin-top: 8px;
+        }
+    }
+
+    @media screen and (min-width: 0px) and (max-width: 720px){
+      
+.ciudad{
+    padding: 8vw;
+    margin-top: 5rem;
+    width: 90%;
+    margin-left: 5%;
+    height: 22rem;
+    box-shadow: 0px 15px 45px 0px #1d1d1d65;
+    border-radius: 20px;
+    background: #f2f2f26c;
+}
+
+.titleCardDetail{
+ 
+    padding: 2vw;
+    font-family:Concert One;
+    font-size: 40px;
+    color: rgb(42, 54, 165);
+}
+.info{
+    
+    display: flex;
+    flex-direction: column;
+    font-family:Concert One;
+    font-size:18px;
+    
+}
+.conteinerTitulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 10vw;
+}
+.itemsInfo{
+    padding: 3px;
+    
+}
+.iconImg{
+    display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+      }

@@ -13,14 +13,14 @@ function App() {
   const [cities, setCities] = useState([]);
 
   function onSearch(ciudad) {
-    //Llamado a la API del clima
+   
     fetch(
       `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`
     )
       .then((r) => r.json())
       .then((recurso) => {
         if (recurso.main !== undefined) {
-          console.log(recurso.main);
+
           const ciudad = {
             min: Math.round(recurso.main.temp_min - 276.15),
             max: Math.round(recurso.main.temp_max - 278.15),
@@ -34,7 +34,7 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
           };
-          console.log(cities);
+
           setCities((oldCities) => [...oldCities, ciudad]);
         } else {
           alert("Ciudad no encontrada");
@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route path="/" render={() => <Nav onSearch={onSearch} />} />
+        <Route path="/" render={() => <Nav/>} />
         <Route
           exact
           path="/ciudad/:ciudadId"
@@ -68,7 +68,7 @@ function App() {
         <Route
           exact
           path="/"
-          render={() => <Cards cities={cities} onClose={onClose} />}
+          render={() => <Cards cities={cities} onClose={onClose} onSearch={onSearch} />}
         />
         <Route exact path="/contact" component={Contact} />
       </BrowserRouter>

@@ -7,13 +7,21 @@ export default function Card({ min, max, name, img, onClose, id }) {
     <div className="card">
       <div id="closeIcon" className="row">
         <button onClick={onClose} className="btnClose">
-          x
+          X
         </button>
       </div>
       <div className="card-body">
         <Link to={`/ciudad/${id}`}>
           <h5 className="card-title">{name}</h5>
         </Link>
+            <img
+              className="iconoClima"
+              src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
+              width="80"
+              height="80"
+              alt=""
+            />
+         
         <div className="row">
           <div className="minmax">
             <p>Min</p>
@@ -23,15 +31,7 @@ export default function Card({ min, max, name, img, onClose, id }) {
             <p>Max</p>
             <p>{max}°</p>
           </div>
-          <div>
-            <img
-              className="iconoClima"
-              src={"http://openweathermap.org/img/wn/" + img + "@2x.png"}
-              width="80"
-              height="80"
-              alt=""
-            />
-          </div>
+       
         </div>
       </div>
     </div>

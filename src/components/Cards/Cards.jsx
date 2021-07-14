@@ -1,11 +1,15 @@
 import React from "react";
 import "./Cards.css";
-
+import SearchBar from "../SearchBar/SearchBar.jsx";
 import Card from "../Card/Card.jsx";
 
-export default function Cards({ cities, onClose }) {
+export default function Cards({ cities, onClose, onSearch }) {
   return (
+    
+    
     <div className="cards">
+      <div className="containerSearch"><SearchBar onSearch={onSearch} /></div>
+      <div className="containerMap">
       {cities.map((c) => (
         <Card
           key={c.index}
@@ -17,6 +21,8 @@ export default function Cards({ cities, onClose }) {
           id={c.id}
         />
       ))}
+      </div>
+      
     </div>
   );
 }
