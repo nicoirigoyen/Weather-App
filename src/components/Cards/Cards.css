@@ -1,5 +1,73 @@
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
+@media screen and (min-width: 1024px) and (max-width: 1980px){
+  .cards {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+
+  .containerSearch{
+
+  }
+  .containerMap{
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin:2vw;
+  }
+  
+  }
+  @media screen and (min-width: 720px) and (max-width: 1224px){
+    .cards {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+  
+    .containerSearch{
+
+     
+ 
+    }
+    .containerMap{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin:2vw;
+    }
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 720px){
+    .cards {
+     
+      /* display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;  */
+       justify-content: center;
+
+    }
+    
+  
+    .containerSearch{
+     
+        /* background-color: teal; */
+          align-items: center;
+          
+      
+    }
+    .containerMap{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin:2vw;
+    }
+  }
+  

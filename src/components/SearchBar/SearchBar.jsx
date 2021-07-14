@@ -4,10 +4,13 @@ import "./SearchBar.css";
 export default function SearchBar({ onSearch }) {
   const [city, setCity] = useState("");
   return (
+    <div className='padre'>
     <form
+    className='containerSearchBar'
       onSubmit={(e) => {
         e.preventDefault();
         onSearch(city);
+        setCity('');
       }}
     >
       <div className="containerSearch">
@@ -23,5 +26,6 @@ export default function SearchBar({ onSearch }) {
         </button>
       </div>
     </form>
+    </div>
   );
 }

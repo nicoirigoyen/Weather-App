@@ -4,7 +4,7 @@ import "./Ciudad.css";
 export default function Ciudad({ city, img }) {
   return (
     <div className="ciudad">
-      {console.log(img)}
+
       <div className="container">
         <h2 className="titleCardDetail">{city.name}</h2>
         <div className="info">

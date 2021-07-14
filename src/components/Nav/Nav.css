@@ -1,3 +1,5 @@
+
+ @media screen and (min-width: 1024px) and (max-width: 1980px){
 #WeatherLogo {
   margin-right: 0.6vw;
 }
@@ -5,17 +7,19 @@
 .navbar{
   background: #bdc3c7;  
   background: linear-gradient(to right, #2c3e50, #bdc3c7);
-
+  
 }
 .containerContact{
   margin-left: 40%;
 }
 .contact{
   font-family: Merriweather;
-  font-size: 18px;
-  padding: 11%;
-  color: white;
+  font-size: 16px;
+  /* margin-right:40%; */
+  padding: 1vw;
+  color: rgb(255, 255, 255);
   border-radius: 0.5vw;
+  /* margin-left: 0%; */
 }
 .contact:hover{
   background-color: rgb(161, 224, 228);
@@ -23,24 +27,108 @@
  
 }
 
-.about{
-  font-family: Merriweather;
-  font-size: 18px;
-  padding: 11%;
-  color: white;
-  border-radius: 0.5vw ;
-  outline: none;
-}
-.about:hover{
-  background-color: rgb(161, 224, 228);
-  transition-duration: 0.4s;
-  text-decoration: underline;
-}
 .title{
+  color: rgb(255, 255, 255);
+  margin-left: 1vw;
   font-family: Merriweather;
   font-size: 22px;
 }
+
+
 .Container
 {
+  
   align-items: center;
+} 
+
+}
+@media screen and (min-width: 720px) and (max-width: 1024px){
+  #WeatherLogo {
+    margin-right: 0.6vw;
+  }
+  .containerContact{
+    /* margin-left: 40%; */
+  }
+  
+  .navbar{
+    background: #bdc3c7;  
+    background: linear-gradient(to right, #2c3e50, #bdc3c7);
+   width: 100%;
+
+  }
+
+  .contact{
+    font-family: Merriweather;
+    font-size: 16px;
+    margin-right: 350px;
+    padding: 1vw;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5vw;
+    
+  }
+  .contact:hover{
+    background-color: rgb(161, 224, 228);
+    text-decoration: underline;
+   
+  }
+
+  .title{
+    color: rgb(255, 255, 255);
+    margin-left: 1vw;
+    font-family: Merriweather;
+    font-size: 18px;
+  }
+
+  .Container
+  {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 720px){
+  #WeatherLogo {
+    /* margin-right: 0.6vw; */
+  }
+  .containerContact{
+    /* margin-left: 40%; */
+  }
+  
+  .navbar{
+     background: #bdc3c7;  
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+    width: 100%;
+    /* position: fixed; */
+    /* z-index: 100; */
+    /* float: left; */
+     
+  }
+
+  .contact{
+    font-family: Merriweather;
+    font-size: 16px;
+
+    /* margin-right: 120px; */
+    padding: 1vw;
+    color: rgb(255, 255, 255);
+    border-radius: 0.5vw;
+    /* margin-left: 5px; */
+  }
+  .contact:hover{
+    background-color: rgb(161, 224, 228);
+    text-decoration: underline;
+   
+  }
+
+  .title{
+    color: rgb(255, 255, 255);
+    margin-left: 1vw;
+    font-family: Merriweather;
+    font-size: 16px;
+  }
+
+  .Container
+  {
+  
+    align-items: center;
+  }
 }

@@ -1,6 +1,10 @@
-.containerSearch{
-    display: flex;
-    flex-direction: row;
+@media screen and (min-width: 1024px) and (max-width: 1980px){
+
+  .containerSearch{
+
+    padding: 1.5vw;
+
+
 }
 
 .inputSearch{
@@ -20,6 +24,107 @@
     outline:none;
 } 
 .searchButton {
+  font-family: Merriweather;
+  background-color: rgb(76, 175, 80); 
+  border-radius: 0.30vw;
+  border: none;
+  color: white;
+  padding: 2.5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  /* border: solid 0.5px #fcfcfc; */
+
+
+  }
+  .searchButton:hover{
+    color: rgba(255, 255, 255, 1) !important;
+    box-shadow: 0 4px 16px rgb(74, 78, 80);
+    transition: all 0.2s ease;
+  }
+}
+@media screen and (min-width: 720px) and (max-width: 1224px){
+  
+
+    .containerSearch{
+
+        padding: 1.5vw;
+   
+        margin: 0;
+
+
+    }
+    .padre{
+      text-align: center;
+    
+    }
+    .inputSearch{
+        font-family:Source Merriweather;
+        font-size: 18px;
+        margin-right: 5px;
+        border-radius: 0.5vh;
+        border:none;
+        width: 40%;
+    }
+    .inputSearch:hover{
+        /* color: rgba(255, 255, 255, 1); */
+        box-shadow: 0 4px 16px rgb(74, 78, 80);
+        transition: all 0.2s ease;
+        
+      }
+    .inputSearch:focus{
+        outline:none;
+    } 
+    .searchButton {
+        font-family: Merriweather;
+        background-color: rgb(76, 175, 80); 
+        border-radius: 0.30vw;
+        border: none;
+        color: white;
+        padding: 2.5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        /* border: solid 0.5px #fcfcfc; */
+    
+      }
+      .searchButton:hover{
+        color: rgba(255, 255, 255, 1) !important;
+        box-shadow: 0 4px 16px rgb(74, 78, 80);
+        transition: all 0.2s ease;
+      }
+    
+}
+  @media screen and (min-width: 0px) and (max-width: 720px){
+    .containerSearch{
+
+      padding: 1.5vw;
+ 
+  }
+
+
+  
+  .inputSearch{
+    font-family:Source Merriweather;
+    font-size: 18px;
+    margin-right: 0.6vw;
+    border-radius: 0.5vh;
+    border:none;
+    width: 60%;
+      
+  }
+  .inputSearch:hover{
+
+      box-shadow: 0 3px 12px rgb(74, 78, 80);
+      transition: all 0.2s ease;
+      
+    }
+  .inputSearch:focus{
+      outline:none;
+  } 
+  .searchButton {
     font-family: Merriweather;
     background-color: rgb(76, 175, 80); 
     border-radius: 0.30vw;
@@ -32,9 +137,12 @@
     font-size: 16px;
     /* border: solid 0.5px #fcfcfc; */
 
+    }
+    .searchButton:hover{
+      color: rgba(255, 255, 255, 1) !important;
+      box-shadow: 0 4px 16px rgb(74, 78, 80);
+      transition: all 0.2s ease;
+    }
   }
-  .searchButton:hover{
-    color: rgba(255, 255, 255, 1) !important;
-    box-shadow: 0 4px 16px rgb(74, 78, 80);
-    transition: all 0.2s ease;
-  }
+
+ 
