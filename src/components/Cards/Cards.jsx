@@ -5,8 +5,7 @@ import Card from "../Card/Card.jsx";
 
 export default function Cards({ cities, onClose, onSearch }) {
   return (
-    
-    
+
     <div className="cards">
       <div className="containerSearch"><SearchBar onSearch={onSearch} /></div>
       <div className="containerMap">

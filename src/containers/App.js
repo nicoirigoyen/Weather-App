@@ -21,7 +21,7 @@ function App() {
       .then((recurso) => {
         if (recurso.main !== undefined) {
 
-          const ciudad = {
+          let ciudad = {
             min: Math.round(recurso.main.temp_min - 276.15),
             max: Math.round(recurso.main.temp_max - 278.15),
             img: recurso.weather[0].icon,
@@ -34,8 +34,10 @@ function App() {
             latitud: recurso.coord.lat,
             longitud: recurso.coord.lon,
           };
-
-          setCities((oldCities) => [...oldCities, ciudad]);
+          if(!cities.find(city=> city.id === ciudad.id)) {
+            setCities(oldCities => [...oldCities, ciudad]);
+          }
+          else{alert("Ciudad ya agregada")}
         } else {
           alert("Ciudad no encontrada");
         }
